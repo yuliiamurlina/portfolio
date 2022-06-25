@@ -1,0 +1,77 @@
+@media ( max-width: 1140px )
+    .sidepanel
+        left: 34px
+    .menu
+        &__block
+            width: 320px
+    .promo
+        .container
+            width: 992px
+        &__wrapper
+            margin-left: 95px
+        &__title
+            font-size: 45px
+            width: 400px
+
+@media ( max-width: 992px )
+    .sidepanel
+        left: 14px
+    .promo
+        background: url('../icons/mybgmob.png') center center / cover no-repeat
+        .container
+            width: 768px
+        &__wrapper
+            margin-left: 65px
+        &__title
+            font-size: 40px
+            width: 248px
+
+@media ( max-width: 768px )
+    .menu
+        &__link
+            margin-bottom: 30px
+    .promo
+        .container
+            width: 576px
+        &__title
+            font-size: 33px
+            width: 248px
+        &__wrapper
+            // margin-left: 55px
+        &__subtitle
+            width: 140px
+            &::before
+                width: 25px
+                height: 25px
+                top: -1px
+                left: 2px
+
+@media ( max-width: 576px )
+    .sidepanel
+        display: none
+    .menu
+        &__link
+            margin-bottom: 35px
+        &__block
+            width: 270px
+    .promo
+        background: url('../icons/mybgmob320.png') center center / cover no-repeat
+        padding-top: 65px
+        .container
+            width: 320px
+            margin: 0 auto
+        &__wrapper
+            margin-left: 44px
+        &__subtitle
+            width: 250px
+            text-align: center
+            &::before
+                left: 15px
+        &__title
+            text-align: center
+            font-size: 34px
+        &__buttons
+            margin-top: 5px
+            &-wrapper
+                background-color: $main_color
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)

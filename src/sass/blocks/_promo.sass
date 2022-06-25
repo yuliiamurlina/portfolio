@@ -1,3 +1,81 @@
+.menu
+    position: fixed
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100vh
+    z-index: 10
+    visibility: hidden
+    opacity: 0
+    transition: all .6s
+    &.active
+        left: 0
+        visibility: visible
+        opacity: 1
+    &__block
+        background-color: $main_color
+        width: 345px
+        height: 100vh
+        padding: 24px 0 50px 40px
+        position: relative
+        // left: -100%
+        transition: all .6s
+        z-index: 10
+    &__close
+        position: absolute
+        top: 25px
+        right: 25px
+        cursor: pointer
+    &__list
+        margin-top: 87px
+        list-style-type: none
+        padding-left: 35px
+    &__link
+        font-weight: 700
+        font-size: 24px
+        line-height: 36px
+        margin-bottom: 15px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 10px
+            left: -35px
+            width: 15px
+            height: 15px
+            border-radius: 100%
+            border: 1px solid #000000
+        &:hover
+            &:before
+                background-color: #fff
+                transition: .5s all
+
+        a
+            color: #FFFFFF
+    &__social
+        position: absolute
+        display: flex
+        justify-content: space-between
+        width: 140px
+        bottom: 50px
+        left: 50%
+        transform: translateX(-50%)
+        svg
+            width: 30px
+            height: 30px
+            &:hover
+                path
+                    fill: #fff
+                    transition: .5s all
+    &_overlay
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #ffecec
+        opacity: 0.75
+
 .promo
     padding: 205px 0 362px
     height: 100vh
@@ -41,3 +119,21 @@
     &__img
         width: 38%
         margin-top: -80px
+    .hamburger
+        position: absolute
+        top: 20px
+        right: 30px
+        height: 21px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+        cursor: pointer
+
+        span
+            display: block
+            width: 30px
+            height: 3px
+            background: #151812
+        .long
+            width: 36px
