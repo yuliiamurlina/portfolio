@@ -1,0 +1,68 @@
+.skills
+    min-height: 1145px
+    padding-bottom: 120px
+    &__subtitle
+        text-align: center
+        @include title-16
+        @include before-circle
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &__title
+        text-align: center
+        @include title-36
+    .divider
+        @include divider
+        margin: 25px auto 60px
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(4, 270px)
+        grid-template-rows: repeat(2, 270px)
+        gap: 13px
+    &__block
+        padding: 30px 25px 30px
+        border: 1px solid #000000
+        &_img
+            height: 65px
+        .img-36
+            height: 36px
+        &_title
+            @include title-14
+            margin-top: 20px
+        &_text
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
+            margin-top: 15px
+    .percent
+        margin-top: 120px
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        column-gap: 45px
+        row-gap: 30px
+        &-item
+            position: relative
+            &__header
+                display: flex
+                justify-content: space-between
+            &__title
+                @include title-14
+                @include before-circle
+                &::before
+                    top: -7px
+            &__number
+                @include title-14
+            &__grey
+                width: 100%
+                background: #E8E4DE
+                height: 14px
+                border-radius: 4px
+                margin-top: 20px
+            &__red
+                position: absolute
+                background: $main_color
+                height: 14px
+                border-radius: 4px
+                top: 41px
