@@ -29,6 +29,16 @@
         &-wrapper
             column-gap: 80px
             grid-template-columns: repeat(2, 349px)
+    .skills
+        .container
+            width: 993px
+        &-wrapper
+            justify-content: center
+            grid-template-columns: repeat(3, 270px)
+            grid-template-rows: repeat(2, 270px)
+        .percent
+            width: 900px
+            margin: 120px auto 0
 
 @media ( max-width: 992px )
     .sidepanel
@@ -64,6 +74,18 @@
         &-wrapper
             column-gap: 70px
             grid-template-columns: repeat(2, 285px)
+        &__title
+            line-height: 45px
+    .skills
+        .container
+            width: 760px
+        &-wrapper
+            grid-template-columns: repeat(3, 270px)
+            grid-template-rows: repeat(2, 270px)
+        .percent
+            width: 760px
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(4, 1fr)
 
 @media ( max-width: 768px )
     .menu
@@ -114,6 +136,17 @@
             grid-template-columns: 285px
             grid-template-rows: repeat(2, 0.5fr)
             row-gap: 20px
+    .skills
+        .container
+            width: 570px
+        &-wrapper
+            grid-template-columns: repeat(2, 270px)
+            grid-template-rows: repeat(3, 270px)
+        .percent
+            margin-top: 50px
+            width: 500px
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(4, 1fr)
 
 @media ( max-width: 576px )
     .sidepanel
@@ -167,3 +200,13 @@
         &__blocks
             display: flex
             flex-direction: column
+    .skills
+        .container
+            width: 320px
+        &-wrapper
+            grid-template-columns: repeat(1, 270px)
+            grid-template-rows: repeat(6, 270px)
+        &__title
+            line-height: 45px
+        .percent
+            width: 300px
