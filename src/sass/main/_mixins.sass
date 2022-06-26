@@ -13,6 +13,9 @@
     line-height: 60px
 
 @mixin before_circle
+    position: relative
+    z-index: 2
+    padding-left: 10px
     &::before
         content: ''
         width: 36px
@@ -23,3 +26,15 @@
         z-index: -1
         top: -25%
         left: 0
+
+@mixin divider
+    margin-top: 25px
+    height: 3px
+    width: 60px
+    background-color: $main_color
+
+@mixin text-12
+    font-weight: 500
+    font-size: 12px
+    line-height: 18px
+    color: #000000
