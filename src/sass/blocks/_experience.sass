@@ -1,0 +1,87 @@
+.experience
+    min-height: 643px
+    padding-bottom: 120px
+    &__subtitle
+        text-align: center
+        @include title-16
+        @include before-circle
+        padding-left: 0
+        &::before
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__title
+        @include title-36
+        text-align: center
+    .divider
+        @include divider
+        margin: 25px auto 60px
+    &-wrapper
+        padding: 0 65px
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        column-gap: 135px
+        grid-template-rows: repeat()
+    .column__title
+        font-weight: 700
+        font-size: 20px
+        line-height: 30px
+        color: #000000
+        position: relative
+        padding-left: 50px
+        &::before
+            position: absolute
+            content: ''
+            width: 15px
+            height: 15px
+            background: $main_color
+            border-radius: 100%
+            left: -7px
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 2
+    ul
+        list-style-type: none
+        li
+            position: relative
+            &::after
+                content: ''
+                width: 1px
+                height: calc( 100% + 18px)
+                position: absolute
+                top: -18px
+                left: 0
+                background-color: #000
+    &__item
+        position: relative
+        &::before
+            content: ''
+            height: 1px
+            position: absolute
+            top: 45px
+            width: 45px
+            background-color: #000
+        &-head
+            padding: 25px 0 0 100px
+            position: relative
+        &-body
+            padding: 12px 0 0 43px
+        &-icon
+            position: absolute
+            top: 3px
+            left: -55px
+            @include before-circle
+            padding: 3px 0 0 17px
+            &::before
+                top: 0
+            img
+                position: absolute
+                margin: 12px 0 0
+        &-title
+            @include title-14
+            margin-bottom: 0
+        &-subtitle, &-text
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
