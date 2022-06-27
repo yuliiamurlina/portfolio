@@ -1,0 +1,33 @@
+.price
+    min-height: 300px
+    &__title
+        @include title-section
+    .divider
+        @include divider
+        margin: 25px auto 60px
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(2, 360px)
+        grid-template-rows: repeat(3, 45px)
+        justify-content: space-between
+        row-gap: 15px
+        .block
+            &__head
+                display: flex
+                justify-content: space-between
+            &__title
+                @include title-14
+                @include before-circle
+                &::before
+                    width: 15px
+                    height: 15px
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: -15px
+            &__num
+                @include title-14
+            &__descr
+                font-weight: 500
+                font-size: 12px
+                line-height: 18px
+                margin-top: 5px
