@@ -38,3 +38,11 @@
     font-size: 12px
     line-height: 18px
     color: #000000
+
+@mixin title-section
+    @include title-16
+    @include before-circle
+    text-align: center
+    &::before
+        left: 50%
+        transform: translateX(-50%)
