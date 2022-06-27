@@ -52,6 +52,10 @@
                 height: 100%
             &:hover
                 transform: none
+    .price
+        .container
+            width: 980px
+            padding: 50px
 
 @media ( max-width: 992px )
     .sidepanel
@@ -110,6 +114,11 @@
             grid-column: 2/3
         #mac
             grid-column: 2/3
+    .price
+        .container
+            width: 760px
+        &-wrapper
+            grid-template-columns: repeat(2, 300px)
 
 @media ( max-width: 768px )
     .menu
@@ -174,6 +183,13 @@
     .portfolio
         .container
             width: 560px
+    .price
+        .container
+            width: 560px
+        &-wrapper
+            grid-template-columns: repeat(1, 360px)
+            grid-template-rows: repeat(4, 45px)
+            padding-left: 40px
 
 @media ( max-width: 576px )
     .sidepanel
@@ -238,6 +254,7 @@
         .percent
             width: 300px
     .portfolio
+        padding-bottom: 0
         .container
             width: 300px
         &-wrapper
@@ -248,3 +265,13 @@
             grid-column: 1/2
         #mac
             grid-column: 1/2
+    .price
+        .container
+            width: 300px
+        &-wrapper
+            grid-template-columns: repeat(1, 200px)
+            grid-template-rows: repeat(4, 1fr)
+            padding-left: 0
+        .block
+            &__head
+                display: block
