@@ -60,6 +60,10 @@
             padding: 20px
             font-weight: 500
             font-size: 13px
+    &__trigger
+        grid-column: 1/3
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
     &__btn
         width: 219px
         height: 45px
@@ -72,3 +76,7 @@
         outline: none
         &:hover
             background: #c40404
+    &__policy
+        @include text-12
+        text-align: center
+        align-self: center
