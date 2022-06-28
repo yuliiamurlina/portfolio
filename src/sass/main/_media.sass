@@ -56,6 +56,14 @@
         .container
             width: 980px
             padding: 50px
+    .contact
+        .container
+            width: 900px
+        &-wrapper
+            display: grid
+            grid-template-columns: 300px 585px
+        &__form
+            grid-template-columns: 258px 258px
 
 @media ( max-width: 992px )
     .sidepanel
@@ -97,7 +105,7 @@
         .container
             width: 760px
         &-wrapper
-            grid-template-columns: repeat(3, 270px)
+            grid-template-columns: repeat(3, 1fr)
             grid-template-rows: repeat(2, 270px)
         .percent
             width: 760px
@@ -116,9 +124,16 @@
             grid-column: 2/3
     .price
         .container
-            width: 760px
+            width: 700px
         &-wrapper
             grid-template-columns: repeat(2, 300px)
+    .contact
+        .container
+            width: 700px
+        &-wrapper
+            grid-template-columns: 200px 470px
+        &__form
+            grid-template-columns: 230px 230px
 
 @media ( max-width: 768px )
     .menu
@@ -190,6 +205,15 @@
             grid-template-columns: repeat(1, 360px)
             grid-template-rows: repeat(4, 45px)
             padding-left: 40px
+    .contact
+        .container
+            width: 520px
+        &-wrapper
+            grid-template-columns: 510px
+        &__img
+            display: none
+        &__form
+            grid-template-columns: 230px 230px
 
 @media ( max-width: 576px )
     .sidepanel
@@ -275,3 +299,11 @@
         .block
             &__head
                 display: block
+    .contact
+        padding: 0
+        .container
+            width: 300px
+        &-wrapper
+            grid-template-columns: 300px
+        &__form
+            grid-template-columns: 140px 140px
