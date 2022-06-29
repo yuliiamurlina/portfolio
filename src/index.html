@@ -130,7 +130,12 @@
         <div class="container">
             <div class="about-wrapper">
                 <div class="about__img">
-                    <img src="img/photo.jpg" alt="girl">
+                    <!-- <img src="img/photo.jpg" alt="girl"> -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/photo.jpg">
+                        <img src="img/photo.jpg" alt="girl">
+                    </picture>
                 </div>
                 <div class="about__header">
                     <h2 class="about__subtitle">Про меня</h2>
@@ -448,7 +453,7 @@
 
                     <form action="#" class="contact__form">
                         <div class="contact__input">
-                            <input required id="name" name="name" type="text">
+                            <input required id="name" name="name" type="text" >
                             <label for="name">Ваше имя</label>
                         </div>
                         <div id="email" class="contact__input">
@@ -473,7 +478,15 @@
         </div>
     </section>
 
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal__title">Спасибо за вашу заявку!</div>
+            <div class="modal__text">Я свяжусь с вами в ближайшее время.</div>
+        </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/sript.js"></script>
 </body>
 </html>
